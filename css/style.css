@@ -13,6 +13,9 @@
      opacity: 1;
  }
 
+.team-img img{
+    
+}
 /*** Spinner End ***/
 
 
@@ -759,6 +762,9 @@
         font-size: 14px;
         left: 15px;
     }
+}
+.career button{
+    padding: 10px 10px;
 }
 .verifynumber{
     background-image: url("https://th.bing.com/th/id/R.a8d7e9265852200724ec1126b8270a29?rik=hH6c%2fubkfuCgyA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fI2fII8e.jpg&ehk=GDWOJGsVx0srMLRq15BnmsO4SIkLr8xwOc%2bKKyOdVOQ%3d&risl=&pid=ImgRaw&r=0");
