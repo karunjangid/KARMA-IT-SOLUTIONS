@@ -1,7 +1,3 @@
-import { inject } from "@vercel/analytics"
-import { inject } from "@vercel/analytics"
-
-
 (function ($) {
     "use strict";
 

@@ -29,6 +29,8 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
         <meta name="google-adsense-account" content="ca-pub-1062789898582643">
+        <script src="https://analytics.vercel.com/v1" defer></script>        
+        
     </head>
 
     <body>
@@ -859,7 +861,13 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+              vercel.analytics.init({
+                domain: 'www.karmaitsolution.site',
+              });
+            });
+          </script>          
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
