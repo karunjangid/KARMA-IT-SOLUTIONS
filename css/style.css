@@ -12,10 +12,52 @@
      visibility: visible;
      opacity: 1;
  }
-
-.team-img img{
-    
+.surprise-box {
+    width: 150px;
+    height: 150px;
+    background-color: #f0a500;
+    border: 2px solid #ff4500;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    cursor: pointer;
+    animation: boxPop 1s infinite alternate;
+    z-index: 10;
 }
+
+@keyframes boxPop {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+    .surprise-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url("https://giffiles.alphacoders.com/280/28008.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.surprise-message p{
+    font-size: 24px;
+    margin: 0;
+    color: #ff0000  ;
+}
+
+
+
 /*** Spinner End ***/
 
 

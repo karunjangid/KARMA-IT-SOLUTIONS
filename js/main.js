@@ -103,7 +103,32 @@
         });
     });
 
-
+    document.getElementById('surpriseBox').addEventListener('click', function() {
+        const surprises = [
+            "🎁 You got a gift card! COUPON - 12HIDJ6K",
+            "☕ Enjoy a free coffee! COUPON - 12HILDJ6K",
+            "🎉 Here's a discount coupon! COUPON - 10KDDJ6K",
+            "🍫 Enjoy a box of chocolates! COUPON - 11HILG0K",
+            "🎅 Santa's gift is on the way! COUPON - 12HCDD1K",
+            "🌟 You are a star! Keep shining!",
+            "❄️ A cozy blanket for the winter! COUPON - 06HIDJ6K",
+            "🎵 A playlist of Christmas carols! COUPON - 18HIDJ4K",
+            "🕷️ Winter is Too special you won a huddy! COUPON - 14HGDJ6K ",
+            "👤 You are very Special for us But this time Try Again!"
+        ];
+        const surprise = surprises[Math.floor(Math.random() * surprises.length)];
+        setTimeout(() => {
+            document.getElementById('surpriseMessage').querySelector('p').textContent = surprise;
+            document.getElementById('surpriseMessage').style.display = 'block';
+            fireworks.style.display = 'none';
+            
+            // Hide surprise message after 10-20 seconds
+            setTimeout(() => {
+                document.getElementById('surpriseMessage').style.display = 'none';
+            }, 10000);  // Adjust the delay as needed (10 seconds here)
+        });  // Adjust the delay as needed (2 seconds here)
+    });
+    
 
 })(jQuery);
 
